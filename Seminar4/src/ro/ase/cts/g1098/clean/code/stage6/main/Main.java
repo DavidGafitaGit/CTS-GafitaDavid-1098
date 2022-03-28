@@ -21,7 +21,7 @@ public class Main {
 		
 		product.setAccountDiscountStrategy(new SummerAccountMarketingStrategy());
 		
-		finalPrice = product.computeFinalPrice(ProductType.NEW, 1000, 10);
+		finalPrice = product.computeFinalPrice(ProductType.DISCOUNT, 1000, 10);
 		System.out.println("Final summer price is " + finalPrice);
 		
 
