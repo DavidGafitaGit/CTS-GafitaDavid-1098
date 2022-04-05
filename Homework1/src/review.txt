@@ -1,8 +1,6 @@
-Logging system
-
-2. In order to manage the app logs define a module that will save (or write) all logs
-   in a single/unique file
-- there will be unique log files for errors and general info
-- the files will be created and opened when the app starts (eager instantiation)
-- the developers don't know the real file names for the 2 logs
-- all loggers will implements the ILogging interface
+Formatting:
+- Change the visibility of some variables used in the Account class from public to private because they are used only within the class
+- Change the names of some variables and functions to more intuitive ones
+- Change the order of the functions in the class
+- Delete the unnecessary comments
+- Delete the unnecessary spaces in code
