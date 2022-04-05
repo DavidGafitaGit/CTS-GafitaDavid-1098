@@ -11,3 +11,4 @@ Meaningful Names:
 
 Classes:
 - Create the enum class AccountType to get rid of too many unnecessary variables from the Account class
+- Create the IAccountable interface

@@ -1,6 +1,6 @@
 package ro.ase.cts.g1098.design.patterns.models;
 
-public class Account {
+public class Account implements IAccountable{
 	
 	private double	loanValue;
 	private double	rate;
