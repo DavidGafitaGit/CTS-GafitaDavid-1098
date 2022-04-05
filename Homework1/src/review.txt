@@ -1,9 +1,12 @@
 Formatting:
 - Change the visibility of some variables used in the Account class from public to private because they are used only within the class
-- Change the names of some variables and functions to more intuitive ones
 - Change the order of the functions in the class
 - Delete the unnecessary comments
 - Delete the unnecessary spaces in code
+- Remove the unused variables
+
+Meaningful Names:
+- Change the names of some variables and functions to more intuitive ones
 
 Classes:
 - Create the enum class AccountType to get rid of too many unnecessary variables from the Account class

@@ -53,7 +53,6 @@ public class Account {
 	}
 	
 	public void printAccount() {
-		int vb = 10;
 		System.out.println("This is an account");
 	}
 
