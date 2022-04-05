@@ -5,6 +5,7 @@ Formatting:
 - Delete the unnecessary spaces in code
 - Remove the unused variables
 - Remove magic numbers
+- Remove unnecessary print methods
 
 Meaningful Names:
 - Change the names of some variables and functions to more intuitive ones

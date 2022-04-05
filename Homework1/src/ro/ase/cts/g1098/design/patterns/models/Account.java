@@ -21,7 +21,6 @@ public class Account implements IAccountable{
 	}
 	
 	public double getLoanValue() {
-		System.out.println("The loan value is: " + this.loanValue);
 		return this.loanValue;
 	}
 	
@@ -50,10 +49,6 @@ public class Account implements IAccountable{
 			totalFee += comupteFee(tempAccount);
 	}
 		return totalFee;
-	}
-	
-	public void printAccount() {
-		System.out.println("This is an account");
 	}
 
 	public String toString() {
