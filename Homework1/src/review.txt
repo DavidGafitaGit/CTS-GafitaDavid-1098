@@ -17,6 +17,11 @@ Classes:
 - Create the custom exception LoanValueException to replace it in the Account class
 - Create custom exception for every set method for validations
 - Add serial version for every exception
+- Move the functions for computation into a new class AccountStrategy
+- Modify the AccountType constructor to have a boolean
+- Modify the AccountType class, add a new method to return if the Account has to pay fees
+- Move constant variables into the new created class
+- Use the method defined in AccountType to determine if the Account has to pay fees and apply the computation function
 
 Structure:
 - Create packages to store meaningful data

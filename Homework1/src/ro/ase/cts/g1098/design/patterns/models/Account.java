@@ -11,8 +11,6 @@ public class Account implements IAccountable{
 	private double	rate;
 	private int	daysActive;
 	private AccountType accountType;
-	private static float ACCOUNT_FEE = 0.0125f;
-	private static float DAYS_IN_YEAR = 365;
 	
 	public Account(double loanValue, double rate, AccountType accountType) throws LoanValueException {
 		if( loanValue < 0)
@@ -52,27 +50,12 @@ public class Account implements IAccountable{
 		this.daysActive = newDaysActive;
 	}
 	
-	private static double comupteFee(Account tempAccount) {
-		return ACCOUNT_FEE	* (tempAccount.loanValue * Math.pow(tempAccount.rate, (tempAccount.daysActive / DAYS_IN_YEAR)) - tempAccount.loanValue);
+	public AccountType getAccountType() {
+		return accountType;
 	}
-	
-	public static double calculateAccountsTotalFee(Account[] accounts)
-	{
-	double totalFee = 0.0;
-	Account	tempAccount;
-	for(int i = 0 ; i < accounts.length ; i++)	{
-		tempAccount = accounts[i];
-		switch(tempAccount.accountType) {
-		case PREMIUM:
-			totalFee += comupteFee(tempAccount);
-			break;
-		case SUPER_PREMIUM:
-			totalFee += comupteFee(tempAccount);
-		default:
-			throw new UnsupportedOperationException();
-		}
-	}
-		return totalFee;
+
+	public void setAccountType(AccountType accountType) {
+		this.accountType = accountType;
 	}
 
 	public String toString() {
@@ -85,5 +68,5 @@ public class Account implements IAccountable{
 	@Override
 	public double getMonthlyRate() {
 		return this.loanValue*this.rate;
-	}
+	}	
 }
