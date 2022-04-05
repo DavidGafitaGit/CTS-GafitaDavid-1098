@@ -20,6 +20,7 @@ Classes:
 
 Structure:
 - Create packages to store meaningful data
+- Replace If - else structure with switch
 
 Functions:
 - Create functions that do only one thing to replace code structures that are too long

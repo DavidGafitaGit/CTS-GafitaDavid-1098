@@ -62,8 +62,15 @@ public class Account implements IAccountable{
 	Account	tempAccount;
 	for(int i = 0 ; i < accounts.length ; i++)	{
 		tempAccount = accounts[i];
-		if(tempAccount.accountType == AccountType.PREMIUM || tempAccount.accountType == AccountType.SUPER_PREMIUM)	
+		switch(tempAccount.accountType) {
+		case PREMIUM:
 			totalFee += comupteFee(tempAccount);
+			break;
+		case SUPER_PREMIUM:
+			totalFee += comupteFee(tempAccount);
+		default:
+			throw new UnsupportedOperationException();
+		}
 	}
 		return totalFee;
 	}
