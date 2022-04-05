@@ -1,5 +1,6 @@
 package ro.ase.cts.g1098.design.patterns.models;
 
+import ro.ase.cts.g1098.design.patterns.exceptions.LoanValueException;
 import ro.ase.cts.g1098.design.patterns.interfaces.IAccountable;
 
 public class Account implements IAccountable{
@@ -11,12 +12,10 @@ public class Account implements IAccountable{
 	private static float ACCOUNT_FEE = 0.0125f;
 	private static float DAYS_IN_YEAR = 365;
 	
-	public Account(double loanValue, double rate, AccountType accountType) throws Exception {
+	public Account(double loanValue, double rate, AccountType accountType) throws LoanValueException {
 		if( loanValue < 0)
-			throw new Exception();
-		else {
-			this.loanValue = loanValue;
-		}
+			throw new LoanValueException();
+		this.loanValue = loanValue;
 		this.rate = rate;
 		this.accountType = accountType;
 	}
@@ -26,12 +25,10 @@ public class Account implements IAccountable{
 		return this.loanValue;
 	}
 	
-	public void setLoanValue(double newLoanValue) throws Exception {
+	public void setLoanValue(double newLoanValue) throws LoanValueException {
 		if(newLoanValue < 0)
-			throw new Exception();
-		else {
-			this.loanValue = newLoanValue;
-		}
+			throw new LoanValueException();
+		this.loanValue = newLoanValue;
 	}
 	
 	public double getRate() {
