@@ -4,3 +4,6 @@ Formatting:
 - Change the order of the functions in the class
 - Delete the unnecessary comments
 - Delete the unnecessary spaces in code
+
+Classes:
+- Create the enum class AccountType to get rid of too many unnecessary variables from the Account class
