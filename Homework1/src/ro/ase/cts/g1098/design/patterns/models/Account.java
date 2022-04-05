@@ -1,5 +1,7 @@
 package ro.ase.cts.g1098.design.patterns.models;
 
+import ro.ase.cts.g1098.design.patterns.interfaces.IAccountable;
+
 public class Account implements IAccountable{
 	
 	private double	loanValue;

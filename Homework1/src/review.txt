@@ -13,3 +13,6 @@ Classes:
 - Create the enum class AccountType to get rid of too many unnecessary variables from the Account class
 - Create the IAccountable interface
 - Override the method created in the interface in Account class
+
+Structure:
+- Create packages to store meaningful data
