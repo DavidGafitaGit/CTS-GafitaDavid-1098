@@ -16,3 +16,6 @@ Classes:
 
 Structure:
 - Create packages to store meaningful data
+
+Functions:
+- Create functions that do only one thing to replace code structures that are too long

@@ -39,14 +39,18 @@ public class Account implements IAccountable{
 		return this.rate;
 	}
 	
-	public static double calculateTotalFee(Account[] accounts)
+	private static double comupteFee(Account tempAccount) {
+		return ACCOUNT_FEE	* (tempAccount.loanValue * Math.pow(tempAccount.rate, (tempAccount.daysActive / DAYS_IN_YEAR)) - tempAccount.loanValue);
+	}
+	
+	public static double calculateAccountsTotalFee(Account[] accounts)
 	{
 	double totalFee = 0.0;
 	Account	tempAccount;
 	for(int i = 0 ; i < accounts.length ; i++)	{
 		tempAccount = accounts[i];
 		if(tempAccount.accountType == AccountType.PREMIUM || tempAccount.accountType == AccountType.SUPER_PREMIUM)	
-			totalFee += ACCOUNT_FEE	* (tempAccount.loanValue * Math.pow(tempAccount.rate, (tempAccount.daysActive / DAYS_IN_YEAR)) - tempAccount.loanValue);
+			totalFee += comupteFee(tempAccount);
 	}
 		return totalFee;
 	}
