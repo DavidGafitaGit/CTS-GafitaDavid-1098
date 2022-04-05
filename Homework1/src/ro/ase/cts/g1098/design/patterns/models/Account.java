@@ -37,10 +37,6 @@ public class Account implements IAccountable{
 		return this.rate;
 	}
 	
-	public double getMonthlyRate() {
-		return this.loanValue*this.rate;
-	}
-
 	public static double calculateTotalFee(Account[] accounts)
 	{
 	double totalFee = 0.0;
@@ -62,5 +58,10 @@ public class Account implements IAccountable{
 				+ " Rate: " + this.rate + ";" 
 				+ " Days active: " + this.daysActive + ";" 
 				+ " Type: " + this.accountType + ";";
+	}
+
+	@Override
+	public double getMonthlyRate() {
+		return this.loanValue*this.rate;
 	}
 }
