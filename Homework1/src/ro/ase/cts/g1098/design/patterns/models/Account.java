@@ -1,6 +1,8 @@
 package ro.ase.cts.g1098.design.patterns.models;
 
+import ro.ase.cts.g1098.design.patterns.exceptions.DaysActiveException;
 import ro.ase.cts.g1098.design.patterns.exceptions.LoanValueException;
+import ro.ase.cts.g1098.design.patterns.exceptions.RateException;
 import ro.ase.cts.g1098.design.patterns.interfaces.IAccountable;
 
 public class Account implements IAccountable{
@@ -31,8 +33,23 @@ public class Account implements IAccountable{
 	}
 	
 	public double getRate() {
-		System.out.println("The rate is: "+ this.rate);
 		return this.rate;
+	}
+	
+	public void setRate(double newRate) throws RateException {
+		if(newRate < 0)
+			throw new RateException();
+		this.rate = newRate;
+	}
+	
+	public int getDaysActive() {
+		return this.getDaysActive();
+	}
+	
+	public void setDaysActive(int newDaysActive) throws DaysActiveException {
+		if(newDaysActive < 0)
+			throw new DaysActiveException();
+		this.daysActive = newDaysActive;
 	}
 	
 	private static double comupteFee(Account tempAccount) {

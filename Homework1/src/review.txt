@@ -15,6 +15,8 @@ Classes:
 - Create the IAccountable interface
 - Override the method created in the interface in Account class
 - Create the custom exception LoanValueException to replace it in the Account class
+- Create custom exception for every set method for validations
+- Add serial version for every exception
 
 Structure:
 - Create packages to store meaningful data
