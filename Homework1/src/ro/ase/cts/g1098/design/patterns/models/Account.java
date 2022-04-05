@@ -6,6 +6,8 @@ public class Account {
 	private double	rate;
 	private int	daysActive;
 	private AccountType accountType;
+	private static float ACCOUNT_FEE = 0.0125f;
+	private static float DAYS_IN_YEAR = 365;
 	
 	public Account(double loanValue, double rate, AccountType accountType) throws Exception {
 		if( loanValue < 0)
@@ -43,11 +45,10 @@ public class Account {
 	{
 	double totalFee = 0.0;
 	Account	tempAccount;
-	int tempDays = 365;
 	for(int i = 0 ; i < accounts.length ; i++)	{
 		tempAccount = accounts[i];
 		if(tempAccount.accountType == AccountType.PREMIUM || tempAccount.accountType == AccountType.SUPER_PREMIUM)	
-			totalFee += .0125	* (tempAccount.loanValue * Math.pow(tempAccount.rate, (tempAccount.daysActive / tempDays)) - tempAccount.loanValue);
+			totalFee += ACCOUNT_FEE	* (tempAccount.loanValue * Math.pow(tempAccount.rate, (tempAccount.daysActive / DAYS_IN_YEAR)) - tempAccount.loanValue);
 	}
 		return totalFee;
 	}
