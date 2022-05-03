@@ -1,0 +1,13 @@
+Bachelor topic title:
+	Stock Price Prediction System (Web application)
+	
+Description of the problem:
+	We need a unique connection to a database to manage the data required by all users while interacting with the application.
+
+Advantages of the solution:
+	- Data access is simple to handle;
+	- Just a single connection to a certain database.
+	
+Disadvantages of the solution:
+	- The presence of only one connection may have an impact on the application's overall performance;
+	- The pattern may have an impact on unit testing procedures.
