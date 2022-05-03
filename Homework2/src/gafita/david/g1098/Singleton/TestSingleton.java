@@ -1,6 +1,6 @@
 package gafita.david.g1098.Singleton;
 
-public class Main {
+public class TestSingleton {
 
 	public static void main(String[] args) {
 		

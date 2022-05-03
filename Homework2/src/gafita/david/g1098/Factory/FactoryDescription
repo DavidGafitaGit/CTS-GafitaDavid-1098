@@ -1,0 +1,16 @@
+Bachelor topic title:
+	Stock Price Prediction System (Web application)
+	
+Description of the problem:
+	To provide the greatest experience for our users, we wish to allow numerous sorts of users with different rankings to utilize the application. Normal user and admin user are the two ranks.
+	To improve the process of creating these types of users, we need a solution that allows us to develop in a centralized manner using mandatory data like name, email, password, and country.
+    Also, each of these users must have the ability to invest in stocks.
+
+Advantages of the solution:
+    - new users can be added that belong to the same family without generating errors;
+    - it implements the dependency inversion principle;
+    - increase the control over the creation of the users.
+	
+Disadvantages of the solution:
+    - new objects can't be generated;
+    - the classes cannot be extended.
