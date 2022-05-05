@@ -4,7 +4,7 @@ import java.util.List;
 
 public class NormalUser extends User {
     
-    private boolean isLogged;
+    private boolean isLogged = false;
 
     public NormalUser(String username, String email, String password, String country) {
         super(username, email, password, country);

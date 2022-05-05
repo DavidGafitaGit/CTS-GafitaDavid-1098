@@ -1,0 +1,16 @@
+Bachelor topic title:
+	Stock Price Prediction System (Web application)
+	
+Description of the problem:
+	In order to have a secure login system for our web aplication we can create a login filter using Proxy 
+	which determines whether the login data entered was tried several times by the same user and failed.
+
+Advantages of the solution:
+	- One of the advantages of Proxy pattern is security;
+	- This pattern avoids duplication of objects which might be huge size and memory;
+	- The remote proxy also ensures about security by installing the local code proxy (stub) in the client machine and then accessing the server with help of the remote code.
+	
+Disadvantages of the solution:
+	- A proxy can mask the life-cycle and state of a volatile resource from its client.
+	- The pattern may have an impact on unit testing procedures.
+	- If a proxy is used to represent a remote resource in the local process, this can disguise the fact that remote communication is involved.
