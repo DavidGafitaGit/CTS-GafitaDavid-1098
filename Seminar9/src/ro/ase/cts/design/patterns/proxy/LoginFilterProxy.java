@@ -24,7 +24,7 @@ public class LoginFilterProxy implements LoginInterface {
 		}
 		
 		if(noAttempts >= noAllowedAttempts) {
-			System.out.println("Login was locked for 10 minutes ...");
+			System.out.println("Notify user ...");
 			return false;
 		}
 		

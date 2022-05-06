@@ -1,0 +1,16 @@
+Bachelor topic title:
+	Stock Price Prediction System (Web application)
+	
+Description of the problem:
+	In order to easily modify an already created stock we can use Decorator.
+	In this case we have added a maximum and a minimum limit that a stock can reach. If the stock reaches the upper or lower limit, the event is reported that it must be closed.
+
+Advantages of the solution:
+    - high degree of flexibility;
+    - expansion of function of classes without inheritance;
+    - readable program code.
+	
+Disadvantages of the solution:
+    - high complexity of software (especially decorator interface);
+    - not beginner-friendly;
+    - high number of objects.
