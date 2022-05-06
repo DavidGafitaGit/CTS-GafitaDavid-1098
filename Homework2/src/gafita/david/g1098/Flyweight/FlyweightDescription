@@ -1,0 +1,14 @@
+Bachelor topic title:
+	Stock Price Prediction System (Web application)
+	
+Description of the problem:
+	The application allows you to view stocks that are limited to a certain value before they are closed.
+
+Advantages of the solution:
+	- The Flyweight Pattern contributes to improving the performance of the application by reducing the number of objects.
+	- The Flyweight Pattern reduces the memory footprint and saving RAM as the common properties are shared between objects using Intrinsic properties.
+	
+Disadvantages of the solution:
+	- If there are no shareable properties in an object, the pattern is of no use.
+	- If memory is not a concern, implementing Flyweight design can be overkill for the application.
+	- The pattern introduces code complexity.ct on unit testing procedures.

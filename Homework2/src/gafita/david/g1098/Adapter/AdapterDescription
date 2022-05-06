@@ -1,1 +1,14 @@
-ss
+Bachelor topic title:
+	Stock Price Prediction System (Web application)
+	
+Description of the problem:
+	Our application allow users to see informations about prices and probability of increase of a stock.
+	We use YahooFinanceAPI to gather informations about a stock and display it properly.
+
+Advantages of the solution:
+	- the existing class are not modified towards creating new context of usage;
+    - it is easy to defined adapters for any context.
+	
+Disadvantages of the solution:
+	- the solution is based upon multiple inheritance which is not possible in Java;
+    - for implementing we will use interfaces and composition.
