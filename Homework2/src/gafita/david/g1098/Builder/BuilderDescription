@@ -1,0 +1,13 @@
+Bachelor topic title:
+	Stock Price Prediction System (Web application)
+	
+Description of the problem:
+	The solution allows you to create stocks with information about them such as: symbol, name and investment risk. 
+	This is the information that needs to be known about the stock and other information such as the description and the list of previous closing prices are optional.
+Advantages of the solution:
+    - complex object can be created independent of their components
+    - it offers flexibility to the users when adding a new service
+	
+Disadvantages of the solution:
+    - the overall performance of the application may be affected by the presence of only one connection
+    - the solution require code duplication

@@ -1,0 +1,19 @@
+Bachelor topic title:
+	Stock Price Prediction System (Web application)
+	
+Description of the problem:
+	The application allows administrators to generate reports based on stock information and the time selected for generation.
+	This information will be received based on an analysis performed in the database. 
+	The request for the reports can take a lot of time so the application will develop a solution that will increase
+    the performance by cloning a certain report and filtering the clones after that by period.
+	
+Advantages of the solution:
+    - this model is flexible in design;
+    - it is easy to detect errors;
+    - we can find missing functionality easily;
+    - it can be reused by the developer for more complicated projects in the future.
+	
+Disadvantages of the solution:
+    - there is certainty in determining the number of iterations;
+    - there may be incomplete or inadequate problem analysis;
+    - there may increase the complexity of the system.

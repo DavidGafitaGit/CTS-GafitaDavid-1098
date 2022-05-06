@@ -18,7 +18,6 @@ public class TestBuilder {
 				.build();
 		
 		System.out.println(stockModel.toString());
-
 	}
 
 }
