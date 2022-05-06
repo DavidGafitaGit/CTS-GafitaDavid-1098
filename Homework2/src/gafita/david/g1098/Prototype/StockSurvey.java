@@ -18,7 +18,7 @@ public class StockSurvey implements Cloneable {
 	private StockSurvey() {}
 
 	@Override
-	protected Object clone() throws CloneNotSupportedException {
+	public Object clone() throws CloneNotSupportedException {
 		System.out.println("Creating clone of " + this.stock.getSymbol());
 		StockSurvey copy = new StockSurvey();
 		copy.report = this.report;

@@ -1,10 +1,10 @@
 package gafita.david.g1098.Flyweight;
 
-public class Stock implements HotStock{
+public class StockAR implements HotStock{
 	
 	private String symbol;
 	
-	public Stock(String symbol) {
+	public StockAR(String symbol) {
 		this.symbol = symbol;
 	}
 	

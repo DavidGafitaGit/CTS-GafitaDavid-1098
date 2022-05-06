@@ -4,12 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class StockFactory {
-	private Map<String, Stock> stocks = new HashMap<String, Stock>();
+	private Map<String, StockAR> stocks = new HashMap<String, StockAR>();
 	
-	public Stock getStock(String symbol) {
-		Stock stock = stocks.get(symbol);
+	public StockAR getStock(String symbol) {
+		StockAR stock = stocks.get(symbol);
 		if(stock == null) {
-			stock = new Stock(symbol);
+			stock = new StockAR(symbol);
 			stocks.put(symbol, stock);
 		}
 		return stock;

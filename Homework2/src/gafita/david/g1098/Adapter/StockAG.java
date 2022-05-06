@@ -1,20 +1,20 @@
 package gafita.david.g1098.Adapter;
 
-public class Stock {
+public class StockAG {
 	private String symbol;
 	private String name;
 	private double price;
 	private int probability;
 	
-	public Stock() {
+	public StockAG() {
 		
 	}
 	
-	public Stock(String symbol) {
+	public StockAG(String symbol) {
 		this.symbol = symbol;
 	}
 	
-	public Stock(String symbol, String name, double price, int probability) {
+	public StockAG(String symbol, String name, double price, int probability) {
 		super();
 		this.symbol = symbol;
 		this.name = name;

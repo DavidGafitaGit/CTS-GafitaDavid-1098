@@ -4,7 +4,7 @@ public class TestAdapter {
 
 	public static void main(String[] args) {
 		
-		Stock stock = new Stock("PLTR");
+		StockAG stock = new StockAG("PLTR");
 		YahooFinanceAPI api = new StockData();
 		api.fetchData(stock.getSymbol());
 		stock = api.getData();

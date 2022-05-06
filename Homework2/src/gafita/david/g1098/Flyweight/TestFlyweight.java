@@ -2,7 +2,7 @@ package gafita.david.g1098.Flyweight;
 
 public class TestFlyweight {
 
-	private static Stock[] stocks = new Stock[100];
+	private static StockAR[] stocks = new StockAR[100];
 	private static StockContext[] stockContexts = new StockContext[100];
 	private static int noStocks = 0;
 	

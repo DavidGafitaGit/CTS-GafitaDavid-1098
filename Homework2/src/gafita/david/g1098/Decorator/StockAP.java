@@ -1,8 +1,8 @@
 package gafita.david.g1098.Decorator;
 
-public class Stock extends AbstractStock {
+public class StockAP extends AbstractStock {
 
-	public Stock(String symbol, String name, float price) {
+	public StockAP(String symbol, String name, float price) {
 		super(symbol, name, price);
 	}
 

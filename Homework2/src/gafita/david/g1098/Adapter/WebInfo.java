@@ -4,11 +4,11 @@ import java.util.Random;
 
 public class WebInfo implements AbstractWebInfo {
 
-	private Stock stock;
+	private StockAG stock;
 	
 	@Override
 	public void findStock(String symbol) {
-		this.stock = new Stock(symbol);
+		this.stock = new StockAG(symbol);
 		System.out.println("Stock was successfully found...");
 		this.stock.setName("Stock name");
 		Random r = new Random();
@@ -20,7 +20,7 @@ public class WebInfo implements AbstractWebInfo {
 	}
 
 	@Override
-	public Stock returnInfo() {
+	public StockAG returnInfo() {
 		return this.stock;
 	}
 

@@ -9,7 +9,7 @@ public class StockData extends WebInfo implements YahooFinanceAPI {
 	}
 
 	@Override
-	public Stock getData() {
+	public StockAG getData() {
 		System.out.println("Data: Informations reveived ...");
 		return this.returnInfo();
 	}
