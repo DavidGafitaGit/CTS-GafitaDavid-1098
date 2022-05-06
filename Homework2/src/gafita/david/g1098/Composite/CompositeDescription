@@ -1,0 +1,14 @@
+Bachelor topic title:
+	Stock Price Prediction System (Web application)
+	
+Description of the problem:
+	The application allows viewing volatile stocks and therefore we want to group them into several categories: stocks with higher volatility and stocks with low volatility. 
+	In this case, we presented only those with high volatility.
+
+Advantages of the solution:
+	- Provides everything to display heavily nested object structures;
+	- Lean, easy-to-understand program code.
+	
+Disadvantages of the solution:
+	- Implementation of component interfaces is very challenging;
+	- Subsequent adjustment of composite features is difficult and cumbersome to realize.
